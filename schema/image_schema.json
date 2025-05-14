@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "input": {
+      "type": "object",
+      "properties": {
+        "image_path": { "type": "string" },
+        "question": { "type": ["string", "null"] }
+      },
+      "required": ["image_path"]
+    },
+    "response": { "type": "string" },
+    "intent": { "type": "string" },
+    "entities": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "sentiment": { "type": "string", "enum": ["positive", "neutral", "negative"] },
+    "meta": {
+      "type": "object",
+      "properties": {
+        "age": { "type": "integer" },
+        "gender": { "type": "string", "enum": ["male", "female", "other"] },
+        "timestamp": { "type": "string", "format": "date-time" }
+      }
+    }
+  },
+  "required": ["input", "response", "intent"]
+}

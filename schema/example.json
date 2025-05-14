@@ -1,0 +1,15 @@
+{
+  "input": {
+    "image_path": "data/raw/rash_456.jpg",
+    "question": "Should I be worried about this rash on my arm?"
+  },
+  "response": "It looks like a mild allergic rash. Monitor for 48 hours. If it spreads or itches severely, seek medical advice.",
+  "intent": "report_symptom",
+  "entities": ["rash", "arm"],
+  "sentiment": "negative",
+  "meta": {
+    "age": 23,
+    "gender": "male",
+    "timestamp": "2025-05-14T12:34:56Z"
+  }
+}
